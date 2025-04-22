@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen }) => {
     { title: 'Branches', path: '/branches', icon: '🏢' },
     { title: 'Staff & Teachers', path: '/staff', icon: '👨‍🏫' },
     { title: 'Students', path: '/students', icon: '👥' },
-    { title: 'Courses & Subjects', path: '/courses', icon: '📚' },
+    // { title: 'Courses & Subjects', path: '/courses', icon: '📚' },
     { title: 'Reports', path: '/reports', icon: '📊' },
     { title: 'Messages', path: '/messages', icon: '✉️' },
     { title: 'Settings', path: '/settings', icon: '⚙️' },

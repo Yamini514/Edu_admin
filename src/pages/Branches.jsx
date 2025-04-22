@@ -24,8 +24,8 @@ const Branches = () => {
     setBranches([...branches, { 
       ...newBranch, 
       id: branches.length + 1,
-      students: 0,
-      staff: 0,
+      students: newBranch.students || 0,
+      staff: newBranch.staff || 0,
       status: 'Active'
     }]);
     setIsModalOpen(false);
@@ -210,6 +210,8 @@ const Branches = () => {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                       required
                       placeholder="e.g. Main Campus"
+                      pattern=".{3,}"
+                      title="Branch name must be at least 3 characters long"
                     />
                   </div>
                   <div>
@@ -221,6 +223,8 @@ const Branches = () => {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                       required
                       placeholder="Full address"
+                      pattern=".{5,}"
+                      title="Address must be at least 5 characters long"
                     />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
@@ -233,6 +237,8 @@ const Branches = () => {
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                         required
                         placeholder="Name of branch head"
+                        pattern=".{3,}"
+                        title="Main head name must be at least 3 characters long"
                       />
                     </div>
                     <div>
