@@ -8,7 +8,7 @@ const Dashboard = () => {
     { title: 'Total Branches', value: '5', change: '+20% from last month', icon: '🏢' },
     { title: 'Total Students', value: '1248', change: '+12% from last month', icon: '👥' },
     { title: 'Total Staff', value: '64', change: '+5% from last month', icon: '👨‍🏫' },
-    { title: 'Active Courses', value: '24', change: '+8% from last month', icon: '📚' },
+   
   ];
 
   return (
